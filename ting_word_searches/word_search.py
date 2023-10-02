@@ -31,6 +31,7 @@ def search_by_word(word, instance):
         num = enumerate(file_info["linhas_do_arquivo"], start=1)
         for line_index, line in num:
             if word.lower() in line.lower():
+                # paiaçada
                 lines_with_word.append({"linha": line_index, "conteudo": line})
 
         if lines_with_word:
