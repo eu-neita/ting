@@ -1,2 +1,7 @@
+import os
+import sys
+
 def txt_importer(path_file):
-    """Aqui irá sua implementação"""
+    with open(path_file, 'r') as file:
+        lines = file.read().split("\n")
+    return lines
